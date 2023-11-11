@@ -1,4 +1,4 @@
-package ws2;
+package bankaccount;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package ws2;
+package bankaccount;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.LinkedList;
