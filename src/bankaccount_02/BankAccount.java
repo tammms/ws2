@@ -15,7 +15,7 @@ public class BankAccount {
     private String name;
     private String accountNumber;
     private float accountBalance;
-    private List<String> transactions;
+    private List<String> transactions = new LinkedList<>();
     private boolean isClosed;
     private String dateCreated;
     private String dateClosed;
@@ -27,8 +27,6 @@ public class BankAccount {
         Random r = new Random();
         int randomNumber = 100000 + r.nextInt(1000000);
         this.accountNumber = String.valueOf(randomNumber);
-
-        this.transactions = new LinkedList<>();
 
         LocalDateTime createdDate = LocalDateTime.now().minusMonths(10);
         DateTimeFormatter fmt = DateTimeFormatter.ofLocalizedDateTime(SHORT);
@@ -44,7 +42,6 @@ public class BankAccount {
         Random r = new Random();
         int randomNumber = 100000 + r.nextInt(1000000);
         this.accountNumber = String.valueOf(randomNumber);
-        this.transactions = new LinkedList<>();
 
         LocalDateTime createdDate = LocalDateTime.now().minusMonths(10);
         DateTimeFormatter fmt = DateTimeFormatter.ofLocalizedDateTime(SHORT);
